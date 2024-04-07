@@ -1,0 +1,9 @@
+@use "sass:color";
+
+$color-main: #3e8d6c;
+
+$color-alt: color.scale($color-main, $lightness: 70%);
+$color-lesslight: color.scale($color-main, $lightness: 80%);
+$color-light: color.scale($color-main, $lightness: 98%);
+
+$color-dark: #2d493e;

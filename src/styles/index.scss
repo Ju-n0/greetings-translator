@@ -1,0 +1,14 @@
+@use "reset";
+@use "variables" as v;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: v.$color-alt;
+
+  &:has(.app--dark) {
+    background-color: v.$color-main;
+  }
+}

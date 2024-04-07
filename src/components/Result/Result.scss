@@ -1,0 +1,26 @@
+@use "../../styles/variables" as v;
+
+.result {
+  margin-inline: auto;
+  color: v.$color-main;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  &-greetings {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  &-language {
+    font-size: 1.6rem;
+  }
+}
+
+.app--dark {
+  .result {
+    color: v.$color-lesslight;
+  }
+}

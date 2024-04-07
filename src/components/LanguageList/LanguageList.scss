@@ -1,0 +1,51 @@
+@use "../../styles/variables" as v;
+
+.languages {
+  color: v.$color-main;
+  height: 40vh;
+  overflow: auto;
+  scrollbar-color: v.$color-main v.$color-alt;
+
+  &-filterinput {
+    text-align: center;
+    background-color: v.$color-light;
+    border: none;
+    color: inherit;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+
+  &-list {
+    padding: 0;
+  }
+
+  &-item {
+    list-style: none;
+    width: 100%;
+    padding: 0.7rem;
+    border-top: 1px solid v.$color-alt;
+
+    transition: background-color 1s;
+
+    &:hover {
+      background-color: v.$color-alt;
+      transition: background-color 0.4s;
+    }
+  }
+
+  &-btn {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    cursor: pointer;
+    color: inherit;
+    font-size: 1.2rem;
+  }
+}
+
+.app--dark {
+  .languages {
+    color: v.$color-lesslight;
+  }
+}
